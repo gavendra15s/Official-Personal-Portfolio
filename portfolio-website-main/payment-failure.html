@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Failed | Gavendra Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .status-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--cream);
+      text-align: center;
+      padding: 100px 5%;
+    }
+    .status-card {
+      background: #fff;
+      padding: 60px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px var(--shadow-sm);
+      max-width: 500px;
+      width: 100%;
+    }
+    .status-icon {
+      font-size: 64px;
+      color: #ef4444;
+      margin-bottom: 20px;
+    }
+    .status-card h2 {
+      font-size: 32px;
+      color: var(--brown-dark);
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+    .status-card p {
+      font-size: 16px;
+      color: var(--text-mid);
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .btn-return {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--amber);
+      color: #fff;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-return:hover {
+      background: var(--amber-dark);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="nav-logo">
+          <a href="index.html" class="nav-logo-icon">
+            <img src="logo.png" alt="PrintRocket Logo">
+          </a>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="status-page">
+    <div class="status-card">
+      <div class="status-icon"><i class="fas fa-times-circle"></i></div>
+      <h2>Payment Failed</h2>
+      <p>Unfortunately, your payment could not be processed at this time. Please check your payment details and try again, or contact us if the issue persists.</p>
+      <div id="error-display" style="margin-bottom: 25px; color: #ef4444; font-size: 14px;"></div>
+      <a href="index.html#consulting" class="btn-return">Try Again</a>
+    </div>
+  </section>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const errorMsg = urlParams.get('error');
+    if(errorMsg) {
+      document.getElementById('error-display').textContent = 'Error: ' + errorMsg;
+    }
+  </script>
+</body>
+</html>

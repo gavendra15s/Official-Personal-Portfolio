@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful | Gavendra Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .status-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--cream);
+      text-align: center;
+      padding: 100px 5%;
+    }
+    .status-card {
+      background: #fff;
+      padding: 60px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px var(--shadow-sm);
+      max-width: 500px;
+      width: 100%;
+    }
+    .status-icon {
+      font-size: 64px;
+      color: #10b981;
+      margin-bottom: 20px;
+    }
+    .status-card h2 {
+      font-size: 32px;
+      color: var(--brown-dark);
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+    .status-card p {
+      font-size: 16px;
+      color: var(--text-mid);
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .btn-return {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--amber);
+      color: #fff;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-return:hover {
+      background: var(--amber-dark);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="nav-logo">
+          <a href="index.html" class="nav-logo-icon">
+            <img src="logo.png" alt="PrintRocket Logo">
+          </a>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="status-page">
+    <div class="status-card">
+      <div class="status-icon"><i class="fas fa-check-circle"></i></div>
+      <h2>Payment Successful!</h2>
+      <p>Thank you for booking a session. Your payment was successfully processed. A confirmation email with the Google Meet link will be sent to you shortly.</p>
+      <div id="payment-id-display" style="margin-bottom: 25px; font-weight: bold; color: var(--text-dark);"></div>
+      <a href="index.html" class="btn-return">Return to Home</a>
+    </div>
+  </section>
+
+  <script>
+    // Extract payment ID from URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const paymentId = urlParams.get('payment_id');
+    if(paymentId) {
+      document.getElementById('payment-id-display').textContent = 'Payment ID: ' + paymentId;
+    }
+  </script>
+</body>
+</html>

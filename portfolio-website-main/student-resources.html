@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Resources | Free Electronics Components &amp; Tools — Gavendra Singh</title>
+  <meta name="description"
+    content="Free electronics components, Arduino boards, sensors, motors, lab tools, and handwritten study notes for genuine engineering students at University of Delhi. Learn. Build. Experiment. Share.">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="student-resources.css">
+  <!-- Tailwind CSS Integration for Mobile Overrides -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false,
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html#home" class="nav-logo" title="Gavendra Singh - Home">
+          <div class="nav-logo-icon">
+            <img src="logo.png" alt="PrintRocket Logo">
+          </div>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+
+        <div class="group relative inline-block max-md:w-full max-md:text-center">
+          <a href="index.html#about" class="cursor-pointer inline-flex items-center justify-center gap-1 py-4 -my-4">
+            About <i class="fas fa-chevron-down text-[10px] opacity-70 max-md:hidden"></i>
+          </a>
+          <div class="absolute max-md:relative hidden group-hover:block max-md:block top-full pt-2 max-md:pt-0 left-1/2 -translate-x-1/2 max-md:left-auto max-md:translate-x-0 z-50">
+            <div class="bg-white shadow-lg max-md:shadow-none rounded-md py-2 max-md:py-0 min-w-[160px] border border-gray-100 max-md:border-none">
+              <a href="index.html#experience" class="!block px-4 py-2 max-md:py-3 hover:bg-orange-50 !text-gray-600 hover:!text-[#7c2d12] !text-[15px] after:!hidden max-md:text-center">Experience</a>
+              <a href="index.html#projects" class="!block px-4 py-2 max-md:py-3 hover:bg-orange-50 !text-gray-600 hover:!text-[#7c2d12] !text-[15px] after:!hidden max-md:text-center">Projects</a>
+              <a href="index.html#achievements" class="!block px-4 py-2 max-md:py-3 hover:bg-orange-50 !text-gray-600 hover:!text-[#7c2d12] !text-[15px] after:!hidden max-md:text-center">Achievements</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative inline-block max-md:w-full max-md:text-center">
+          <a href="index.html#mentors" class="cursor-pointer inline-flex items-center justify-center gap-1 py-4 -my-4">
+            People <i class="fas fa-chevron-down text-[10px] opacity-70 max-md:hidden"></i>
+          </a>
+          <div class="absolute max-md:relative hidden group-hover:block max-md:block top-full pt-2 max-md:pt-0 left-1/2 -translate-x-1/2 max-md:left-auto max-md:translate-x-0 z-50">
+            <div class="bg-white shadow-lg max-md:shadow-none rounded-md py-2 max-md:py-0 min-w-[160px] border border-gray-100 max-md:border-none">
+              <a href="index.html#mentors" class="!block px-4 py-2 max-md:py-3 hover:bg-orange-50 !text-gray-600 hover:!text-[#7c2d12] !text-[15px] after:!hidden max-md:text-center">Mentors</a>
+              <a href="index.html#interns" class="!block px-4 py-2 max-md:py-3 hover:bg-orange-50 !text-gray-600 hover:!text-[#7c2d12] !text-[15px] after:!hidden max-md:text-center">Interns</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="index.html#projects">Projects</a>
+        <a href="#sr-hero" style="color: var(--brown-dark); font-weight: 700;">Student Resources</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#consulting">Consulting</a>
+      </div>
+      <a href="index.html#consulting" class="nav-btn">Book a Call</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ 1. HERO ═══════════ -->
+  <section class="sr-hero" id="sr-hero">
+    <div class="sr-hero-inner">
+      <div class="sr-badge">
+        <span class="dot"></span> 100% Free for Genuine Students &bull; DU North Campus
+      </div>
+      <h1>Free Electronics Resources <span>for Students</span></h1>
+      <div class="sr-tagline">Learn &bull; Build &bull; Experiment &bull; Share</div>
+
+      <div class="sr-quote-banner">
+        <p>"If a student has the willingness to learn, lack of money should never be the reason they stop building."</p>
+      </div>
+
+      <p class="sr-hero-desc">
+        I provide microcontrollers, sensors, motors, multimeters, lab tools, soldering kits, copper PCBs, books, and handwritten engineering notes <strong>FREE OF COST</strong> to students who genuinely need them. No fees, no hidden catches—just a passion to see you build your next breakthrough.
+      </p>
+
+      <div class="sr-hero-pills">
+        <span class="sr-hero-pill"><i class="fas fa-gift"></i> Free of Cost</span>
+        <span class="sr-hero-pill"><i class="fas fa-layer-group"></i> Max 3 Items / Student</span>
+        <span class="sr-hero-pill"><i class="fas fa-bolt"></i> First Come, First Served</span>
+        <span class="sr-hero-pill"><i class="fas fa-map-marker-alt"></i> DU North Campus Collection</span>
+        <span class="sr-hero-pill"><i class="fas fa-mug-hot"></i> Tea &amp; Samosa on Me</span>
+      </div>
+
+      <div class="sr-hero-actions">
+        <a href="#srGallerySection" class="sr-btn sr-btn-primary">
+          <i class="fas fa-microchip"></i> Browse Resources
+        </a>
+        <a href="#srRequestSection" class="sr-btn sr-btn-secondary">
+          <i class="fas fa-paper-plane"></i> Request a Resource
+        </a>
+        <a href="#srCollectionSection" class="sr-btn sr-btn-secondary">
+          <i class="fas fa-clock"></i> Collection Points
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 2. MY PRINCIPLES (KIRAT KARO, NAAM JAPO, VAND CHHAKO) ═══════════ -->
+  <section class="sr-principles" id="srPrinciplesSection">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Guiding Philosophy</span>
+        <h2>My Principles</h2>
+        <p>Three timeless pillars of righteous living, honest work, and community sharing</p>
+        <div class="line"></div>
+      </div>
+
+      <div class="sr-principles-intro">
+        <p style="font-size: 16.5px; color: var(--text-mid); line-height: 1.8;">
+          My work, engineering journey, and this student resource initiative are guided by the three core principles taught by Guru Nanak Dev Ji. Among these, <strong>Vand Chhako</strong> is the foundation of why these electronics and materials are freely shared.
+        </p>
+      </div>
+
+      <div class="sr-principles-grid">
+        <!-- Principle 1 -->
+        <div class="sr-principle-card">
+          <div class="sr-p-badge"><i class="fas fa-hammer"></i> Pillar I</div>
+          <div class="sr-p-icon"><i class="fas fa-hands-helping"></i></div>
+          <h3>Kirat Karo</h3>
+          <div class="sr-p-gurmukhi">ਕਿਰਤ ਕਰੋ &bull; Honest Labor &amp; Sincere Effort</div>
+          <p>
+            Earn an honest livelihood through earnest effort, dedication, integrity, and hard work. As engineers, innovators, and students, our work should be rooted in true technical craftsmanship and the relentless pursuit of solving genuine human problems without shortcuts.
+          </p>
+          <div class="sr-p-connection">
+            <strong>Living the Principle:</strong> Working hard to build real hardware startups, publish rigorous research, and create value through sincere sweat and discipline.
+          </div>
+        </div>
+
+        <!-- Principle 2 -->
+        <div class="sr-principle-card">
+          <div class="sr-p-badge"><i class="fas fa-pray"></i> Pillar II</div>
+          <div class="sr-p-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Naam Japo</h3>
+          <div class="sr-p-gurmukhi">ਨਾਮ ਜਪੋ &bull; Mindful Remembrance &amp; Humility</div>
+          <p>
+            Keep the Divine and ultimate truth at the forefront of every action. Stay grounded with a humble mind, free from pride and ego. Knowledge and intellect are blessings meant to enlighten ourselves and bring compassion to how we treat everyone around us.
+          </p>
+          <div class="sr-p-connection">
+            <strong>Living the Principle:</strong> Remembering that our abilities are gifts, and using engineering intellect with humility to serve society rather than personal vanity.
+          </div>
+        </div>
+
+        <!-- Principle 3 (FEATURED: VAND CHHAKO) -->
+        <div class="sr-principle-card featured">
+          <div class="sr-p-badge" style="color:var(--amber-dark);"><i class="fas fa-heart"></i> Pillar III &bull; The Core of This Initiative</div>
+          <div class="sr-p-icon"><i class="fas fa-share-alt"></i></div>
+          <h3>Vand Chhako</h3>
+          <div class="sr-p-gurmukhi">ਵੰਡ ਛਕੋ &bull; Selfless Sharing with the Community</div>
+          <p>
+            Share what you earn, your knowledge, your blessings, and your resources with those in need before consuming for yourself. No single person prospers alone; true wealth is created when we uplift the entire collective community.
+          </p>
+          <div class="sr-p-connection" style="background: rgba(124, 45, 18, 0.08); border-left-color: var(--brown-dark);">
+            <strong>Connecting to Student Resources:</strong> Hardware components sitting locked in boxes create zero innovation. By sharing microcontrollers, sensors, ICs, and lab tools freely with students who need them, we ensure lack of money never stops a curious student from building.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 3. COLLECTION POINTS ═══════════ -->
+  <section class="sr-collection" id="srCollectionSection">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Pickup Locations &amp; Timings</span>
+        <h2>Collection Points</h2>
+        <p>Convenient, organized pickup locations at University of Delhi, North Campus</p>
+        <div class="line"></div>
+      </div>
+
+      <div class="sr-collection-grid">
+        <!-- MALE STUDENTS -->
+        <div class="sr-col-card">
+          <div class="sr-col-header">
+            <span class="sr-col-type male"><i class="fas fa-male"></i> Male Students</span>
+            <div class="sr-col-icon"><i class="fas fa-utensils"></i></div>
+          </div>
+          <h3>Pandit Ji Canteen</h3>
+          <div class="sr-col-address">
+            <i class="fas fa-map-pin"></i>
+            <div>
+              <strong>University of Delhi, North Campus</strong><br>
+              Delhi – 110007
+            </div>
+          </div>
+
+          <div class="sr-col-schedule">
+            <h4><i class="fas fa-calendar-alt"></i> Collection Timings</h4>
+            <div class="sr-time-row">
+              <span class="sr-day">Saturday</span>
+              <span class="sr-time">10:00 AM – 8:00 PM</span>
+            </div>
+            <div class="sr-time-row">
+              <span class="sr-day">Sunday</span>
+              <span class="sr-time">10:00 AM – 3:00 PM</span>
+            </div>
+          </div>
+
+          <p class="sr-col-note">
+            <i class="fas fa-info-circle" style="color:var(--amber-dark);"></i> <strong>Pickup Procedure:</strong> Meet Gavendra Singh directly at Pandit Ji Canteen during these hours. Carry your college student ID card for quick verification.
+          </p>
+        </div>
+
+        <!-- FEMALE STUDENTS -->
+        <div class="sr-col-card" style="border-color: #fbcfe8; background: linear-gradient(180deg, #fff 0%, #fffdfa 100%);">
+          <div class="sr-col-header">
+            <span class="sr-col-type female"><i class="fas fa-female"></i> Female Students</span>
+            <div class="sr-col-icon" style="color:#db2777;"><i class="fas fa-building"></i></div>
+          </div>
+          <h3>PrintRocket Office</h3>
+          <div class="sr-col-address">
+            <i class="fas fa-map-pin"></i>
+            <div>
+              <strong>5th Floor, Room 514, Udhmodya Foundation</strong><br>
+              Maharishi Kanad Bhawan, University of Delhi, North Campus<br>
+              Delhi – 110007
+            </div>
+          </div>
+
+          <div class="sr-col-schedule" style="background:#fff7ed;">
+            <h4><i class="fas fa-calendar-alt"></i> Collection Timings</h4>
+            <div class="sr-time-row">
+              <span class="sr-day">Monday – Friday</span>
+              <span class="sr-time">1:00 PM – 2:00 PM</span>
+            </div>
+          </div>
+
+          <p class="sr-col-note" style="color:var(--text-dark);">
+            <i class="fas fa-shield-alt" style="color:#db2777;"></i> <strong>Assisted Collection:</strong> Female students can collect approved resources from the PrintRocket office during these hours with dedicated assistance from female team members in a comfortable, supportive environment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 4. FIRST COME, FIRST SERVED + MAXIMUM 3 ITEMS ═══════════ -->
+  <section class="sr-rules" id="srRulesSection">
+    <div class="container">
+      <div class="sr-rules-box">
+        <div class="sr-rules-left">
+          <span style="font-size:12px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:var(--amber);">Fair Access Policy</span>
+          <h3>Fair, Transparent &amp; Genuine</h3>
+          <p>
+            To ensure resources reach as many genuine student builders as possible, every allocation is governed by simple, honest rules.
+          </p>
+        </div>
+
+        <div class="sr-rules-right">
+          <div class="sr-rule-pill">
+            <i class="fas fa-boxes"></i>
+            <div class="sr-rule-pill-text">
+              "Maximum 3 items per student."
+              <span>Ensures equal distribution across diverse student hardware projects.</span>
+            </div>
+          </div>
+
+          <div class="sr-rule-pill">
+            <i class="fas fa-hourglass-start"></i>
+            <div class="sr-rule-pill-text">
+              "First Come. First Served."
+              <span>No fake stock countdowns, no artificial hype. Genuine peer-to-peer sharing.</span>
+            </div>
+          </div>
+
+          <div class="sr-rule-pill">
+            <i class="fas fa-id-card"></i>
+            <div class="sr-rule-pill-text">
+              Student ID Required for Verification
+              <span>Valid college/university enrollment ensures resources go to real learners.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 5. TEA & SAMOSA ═══════════ -->
+  <section class="sr-tea" id="srTeaSection">
+    <div class="container">
+      <div class="sr-tea-wrap">
+        <div class="sr-tea-text">
+          <span class="eyebrow">Warm Campus Hospitality</span>
+          <h2>"Come for the Resources.<br>Stay for the Conversation."</h2>
+          <div class="sr-tea-on-me">
+            <i class="fas fa-mug-hot"></i> "Tea &amp; Samosa are on me."
+          </div>
+          <p>
+            Engineering is much more than silicon chips, breadboard wires, and lines of code. It thrives on human connection, sharing project struggles, bouncing startup ideas, and finding fellow builders who share your curiosity.
+          </p>
+          <p style="margin-bottom:0;">
+            When you visit to collect your requested components, take a seat. Have a hot cup of tea, enjoy a fresh samosa, and let’s talk about what you're passionate about building.
+          </p>
+        </div>
+
+        <div class="sr-samosa-choice">
+          <h4><i class="fas fa-utensils"></i> Choose Your Samosa</h4>
+          <div class="sr-samosa-options">
+            <div class="sr-samosa-card">
+              <div class="sr-samosa-icon"><i class="fas fa-cookie-bite"></i></div>
+              <div class="sr-samosa-info">
+                <strong>Meetha Samosa</strong>
+                <span>Sweet, traditional, golden-fried treat</span>
+              </div>
+            </div>
+
+            <div class="sr-samosa-card">
+              <div class="sr-samosa-icon"><i class="fas fa-pepper-hot"></i></div>
+              <div class="sr-samosa-info">
+                <strong>Namkeen Samosa</strong>
+                <span>Crisp spiced potato filling with green &amp; sweet chutney</span>
+              </div>
+            </div>
+
+            <div class="sr-samosa-card" style="background:#fffaf0;">
+              <div class="sr-samosa-icon" style="color:var(--brown-dark); background:rgba(124, 45, 18, 0.1);"><i class="fas fa-coffee"></i></div>
+              <div class="sr-samosa-info">
+                <strong>Kadak Hot Chai (Tea)</strong>
+                <span>Freshly brewed campus tea to spark good conversation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 6. HOW IT WORKS ═══════════ -->
+  <section class="sr-works" id="srWorksSection">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Simple 4-Step Process</span>
+        <h2>How It Works</h2>
+        <p>From browsing the inventory to building your project in 4 simple steps</p>
+        <div class="line"></div>
+      </div>
+
+      <div class="sr-steps-grid">
+        <div class="sr-step-card">
+          <div class="sr-step-num">01</div>
+          <div class="sr-step-icon"><i class="fas fa-search"></i></div>
+          <h3>Browse Inventory</h3>
+          <p>Look through the actual photographs of 50+ available components, microcontrollers, sensors, lab tools, and handwritten study notes below.</p>
+        </div>
+
+        <div class="sr-step-card">
+          <div class="sr-step-num">02</div>
+          <div class="sr-step-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>Submit Request</h3>
+          <p>Fill out the quick request form with your college info, your project purpose, and select up to 3 items you genuinely require.</p>
+        </div>
+
+        <div class="sr-step-card">
+          <div class="sr-step-num">03</div>
+          <div class="sr-step-icon"><i class="fas fa-check-double"></i></div>
+          <h3>Slot Confirmation</h3>
+          <p>Your request will be acknowledged with confirmation of your designated collection slot. Remember to keep your Student ID handy.</p>
+        </div>
+
+        <div class="sr-step-card">
+          <div class="sr-step-num">04</div>
+          <div class="sr-step-icon"><i class="fas fa-mug-hot"></i></div>
+          <h3>Collect &amp; Enjoy Chai</h3>
+          <p>Visit your collection point (Pandit Ji Canteen for male students, PrintRocket Office for female students), collect your parts, have tea and samosa on me, and build!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 7. ACTUAL RESOURCE GALLERY WITH SEARCH + FILTERS ═══════════ -->
+  <section class="sr-gallery-section" id="srGallerySection">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Real Inventory Photographs</span>
+        <h2>Resource Gallery</h2>
+        <p>Actual photographs of all available electronics components, tools, and study materials</p>
+        <div class="line"></div>
+      </div>
+
+      <div class="sr-controls-wrap">
+        <!-- Live Search -->
+        <div class="sr-search-bar">
+          <i class="fas fa-search sr-search-icon"></i>
+          <input type="text" id="srSearchInput" placeholder="Search by name, category, or project type (e.g. Arduino, sensor, motor, IC, multimeter)..." autocomplete="off">
+          <button type="button" id="srSearchClear" class="sr-search-clear" title="Clear search"><i class="fas fa-times-circle"></i></button>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="sr-filter-tabs">
+          <button type="button" class="sr-filter-btn active" data-category="All">
+            <span>All</span> <span class="sr-count-badge">50</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="Electronics Components">
+            <span>Electronics Components</span> <span class="sr-count-badge">15</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="Arduino & Embedded">
+            <span>Arduino &amp; Embedded</span> <span class="sr-count-badge">5</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="Sensors">
+            <span>Sensors</span> <span class="sr-count-badge">5</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="Motors">
+            <span>Motors</span> <span class="sr-count-badge">7</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="Lab Equipment">
+            <span>Lab Equipment</span> <span class="sr-count-badge">7</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="PCB & Prototyping">
+            <span>PCB &amp; Prototyping</span> <span class="sr-count-badge">5</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="Books & Notes">
+            <span>Books &amp; Notes</span> <span class="sr-count-badge">5</span>
+          </button>
+          <button type="button" class="sr-filter-btn" data-category="Project Materials">
+            <span>Project Materials</span> <span class="sr-count-badge">1</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Count Display -->
+      <div class="sr-results-status">
+        <span id="srResultsCount">Showing 50 of 50 available resources</span>
+        <span style="font-weight:600; color:var(--brown-dark);"><i class="fas fa-hand-holding-heart"></i> All Items Free for Genuine Students</span>
+      </div>
+
+      <!-- Resource Cards Grid -->
+      <div class="sr-cards-grid" id="srGalleryGrid">
+                  <div class="sr-card" data-id="arduino-uno" tabindex="0" role="button" aria-label="View details for Arduino UNO R3 Development Board">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Arduino uno.jpeg" alt="Arduino UNO R3 Development Board" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Arduino &amp; Embedded</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Arduino UNO R3 Development Board</h4>
+              <p class="sr-card-desc">Core ATmega328P microcontroller board for robotics, IoT, and embedded prototypes.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="arduino-cable" tabindex="0" role="button" aria-label="View details for Arduino USB Type-A to Type-B Cable">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Arduino cable.jpeg" alt="Arduino USB Type-A to Type-B Cable" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Arduino &amp; Embedded</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Arduino USB Type-A to Type-B Cable</h4>
+              <p class="sr-card-desc">High-durability programming and 5V power cable for Arduino UNO and Mega boards.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-driver-l298n" tabindex="0" role="button" aria-label="View details for L298N Dual H-Bridge Motor Driver Module">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Motor driver.jpeg" alt="L298N Dual H-Bridge Motor Driver Module" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Arduino &amp; Embedded</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">L298N Dual H-Bridge Motor Driver Module</h4>
+              <p class="sr-card-desc">Dual H-bridge driver module to control speed and direction of 2 DC motors or 1 stepper.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="rfid-smart-card" tabindex="0" role="button" aria-label="View details for 13.56 MHz High-Frequency RFID Smart Card">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/RFID CARD.jpeg" alt="13.56 MHz High-Frequency RFID Smart Card" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Arduino &amp; Embedded</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">13.56 MHz High-Frequency RFID Smart Card</h4>
+              <p class="sr-card-desc">Passive contactless smart card with unique factory UID for wireless identification.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="rfid-key-fob" tabindex="0" role="button" aria-label="View details for Compact RFID Key Fob Transponder Tag">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/RFID_card.jpeg" alt="Compact RFID Key Fob Transponder Tag" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Arduino &amp; Embedded</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Compact RFID Key Fob Transponder Tag</h4>
+              <p class="sr-card-desc">Rugged waterproof keychain tag for contactless access control and authentication.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="ultrasonic-servo-assembly" tabindex="0" role="button" aria-label="View details for HC-SR04 Ultrasonic Distance Sensor + Micro Servo Mount">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/servomotor with ultrasonic sensor .jpeg" alt="HC-SR04 Ultrasonic Distance Sensor + Micro Servo Mount" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Sensors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">HC-SR04 Ultrasonic Distance Sensor + Micro Servo Mount</h4>
+              <p class="sr-card-desc">Pan-tilt scanning sonar assembly with ultrasonic rangefinder and servo motor.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="ir-proximity-sensor" tabindex="0" role="button" aria-label="View details for Infrared (IR) Obstacle &amp; Proximity Sensor Module">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/IR_sendor.jpeg" alt="Infrared (IR) Obstacle &amp; Proximity Sensor Module" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Sensors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Infrared (IR) Obstacle &amp; Proximity Sensor Module</h4>
+              <p class="sr-card-desc">Digital optical obstacle detection module with onboard comparator and sensitivity dial.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="pir-motion-sensor" tabindex="0" role="button" aria-label="View details for PIR Human Motion Detector Module (HC-SR501)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/motion_sensor.jpeg" alt="PIR Human Motion Detector Module (HC-SR501)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Sensors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">PIR Human Motion Detector Module (HC-SR501)</h4>
+              <p class="sr-card-desc">Passive infrared sensor with Fresnel lens for detecting human presence and motion.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="ldr-optical-sensor" tabindex="0" role="button" aria-label="View details for LDR Ambient Light Sensor &amp; Optical Diode Set">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Diode and light sensor.jpeg" alt="LDR Ambient Light Sensor &amp; Optical Diode Set" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Sensors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">LDR Ambient Light Sensor &amp; Optical Diode Set</h4>
+              <p class="sr-card-desc">Photoresistor and photodiode kit for ambient lux measurement and day/night triggers.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="analog-digital-sensor" tabindex="0" role="button" aria-label="View details for Multi-Purpose Analog / Digital Sensor Module">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/sensor.jpeg" alt="Multi-Purpose Analog / Digital Sensor Module" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Sensors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Multi-Purpose Analog / Digital Sensor Module</h4>
+              <p class="sr-card-desc">Dual-output conditioned sensor module for linear telemetry and threshold switching.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-4wd-robot-chassis" tabindex="0" role="button" aria-label="View details for 4WD Robot Drive Set (4 Geared Motors + Rubber Wheels)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/set of four project motor with wheel.jpeg" alt="4WD Robot Drive Set (4 Geared Motors + Rubber Wheels)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Motors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">4WD Robot Drive Set (4 Geared Motors + Rubber Wheels)</h4>
+              <p class="sr-card-desc">Full four-wheel drive locomotion kit with dual-shaft BO motors and rubber grip wheels.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-high-torque-geared" tabindex="0" role="button" aria-label="View details for High-Torque Heavy-Duty Geared DC Motor">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/high load motor.jpeg" alt="High-Torque Heavy-Duty Geared DC Motor" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Motors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">High-Torque Heavy-Duty Geared DC Motor</h4>
+              <p class="sr-card-desc">Rugged high-torque geared motor built for heavy lifting and mechanical drives.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-3phase-brushless" tabindex="0" role="button" aria-label="View details for High-Efficiency 3-Phase Compact DC Motor">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/3_phase_motor.jpeg" alt="High-Efficiency 3-Phase Compact DC Motor" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Motors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">High-Efficiency 3-Phase Compact DC Motor</h4>
+              <p class="sr-card-desc">Multi-phase compact motor with smooth torque delivery and high power-to-weight ratio.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-fan-propeller" tabindex="0" role="button" aria-label="View details for DC Motor with Pre-Fitted Aerodynamic Fan Propeller">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/motor with blaid.jpeg" alt="DC Motor with Pre-Fitted Aerodynamic Fan Propeller" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Motors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">DC Motor with Pre-Fitted Aerodynamic Fan Propeller</h4>
+              <p class="sr-card-desc">High-RPM DC motor fitted with a balanced 3-blade aerodynamic fan propeller.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-standard-toy" tabindex="0" role="button" aria-label="View details for Standard DC Project / Toy Motor (3V - 6V)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/motor.jpeg" alt="Standard DC Project / Toy Motor (3V - 6V)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Motors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Standard DC Project / Toy Motor (3V - 6V)</h4>
+              <p class="sr-card-desc">Classic hobby DC motor for educational science models and rotational mechanisms.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-mini-vibration" tabindex="0" role="button" aria-label="View details for Miniature Coreless / Vibration Motor">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/motor_1.jpeg" alt="Miniature Coreless / Vibration Motor" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Motors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Miniature Coreless / Vibration Motor</h4>
+              <p class="sr-card-desc">Ultra-compact high-speed micro motor for haptic feedback and miniature models.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="motor-high-speed-micro" tabindex="0" role="button" aria-label="View details for High-Speed Micro Project Motor">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/motor_high_speed.jpeg" alt="High-Speed Micro Project Motor" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Motors</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">High-Speed Micro Project Motor</h4>
+              <p class="sr-card-desc">High-velocity miniature motor engineered for lightweight, fast-moving builds.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="digital-multimeter" tabindex="0" role="button" aria-label="View details for Digital Multimeter (DMM) Test Instrument">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Multimeter.jpeg" alt="Digital Multimeter (DMM) Test Instrument" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Lab Equipment</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Digital Multimeter (DMM) Test Instrument</h4>
+              <p class="sr-card-desc">Essential test instrument for voltage, current, resistance, and continuity checks.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="multimeter-probes" tabindex="0" role="button" aria-label="View details for Heavy-Duty Multimeter Test Probe Leads Set">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/multimeter wire.jpeg" alt="Heavy-Duty Multimeter Test Probe Leads Set" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Lab Equipment</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Heavy-Duty Multimeter Test Probe Leads Set</h4>
+              <p class="sr-card-desc">High-flexibility insulated test probes with sharp tips and standard banana plugs.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="soldering-iron" tabindex="0" role="button" aria-label="View details for Precision Electronics Soldering Iron (25W/35W)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Soldering_iron.jpeg" alt="Precision Electronics Soldering Iron (25W/35W)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Lab Equipment</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Precision Electronics Soldering Iron (25W/35W)</h4>
+              <p class="sr-card-desc">Ergonomic soldering iron with fast-heating tip for circuit assembly and wiring.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="soldering-wire-spool" tabindex="0" role="button" aria-label="View details for High-Grade Rosin Core Solder Wire Spool">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/soldering_wire.jpeg" alt="High-Grade Rosin Core Solder Wire Spool" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Lab Equipment</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">High-Grade Rosin Core Solder Wire Spool</h4>
+              <p class="sr-card-desc">Low-temperature rosin-core solder wire for clean, shiny, reliable solder joints.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="helping-hand-stand" tabindex="0" role="button" aria-label="View details for Helping Hand Soldering Stand with Alligator Clips">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/All in one stand.jpeg" alt="Helping Hand Soldering Stand with Alligator Clips" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Lab Equipment</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Helping Hand Soldering Stand with Alligator Clips</h4>
+              <p class="sr-card-desc">Heavy cast-iron base fixture with adjustable crocodile clamps and iron holster.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="hot-melt-glue-gun" tabindex="0" role="button" aria-label="View details for Heavy-Duty Hot Melt Glue Gun (Rapid Heat)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Glue GUN.jpeg" alt="Heavy-Duty Hot Melt Glue Gun (Rapid Heat)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Lab Equipment</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Heavy-Duty Hot Melt Glue Gun (Rapid Heat)</h4>
+              <p class="sr-card-desc">High-temperature trigger glue gun for structural mounting, enclosure assembly, and wire strain relief.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="power-transformer-stepdown" tabindex="0" role="button" aria-label="View details for Step-Down Linear Power Transformer (220V to 12-0-12V)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/TRANSFORMER.jpeg" alt="Step-Down Linear Power Transformer (220V to 12-0-12V)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Lab Equipment</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Step-Down Linear Power Transformer (220V to 12-0-12V)</h4>
+              <p class="sr-card-desc">Center-tapped linear iron-core transformer for regulated dual-rail DC power supplies.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="breadboard-half" tabindex="0" role="button" aria-label="View details for Half-Size Solderless Prototyping Breadboard (400 Tie-Points)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Breadboard.jpeg" alt="Half-Size Solderless Prototyping Breadboard (400 Tie-Points)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">PCB &amp; Prototyping</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Half-Size Solderless Prototyping Breadboard (400 Tie-Points)</h4>
+              <p class="sr-card-desc">Compact 400-tie-point solderless breadboard with dual power rails.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="breadboard-full" tabindex="0" role="button" aria-label="View details for Full-Size Solderless Breadboard (830 Tie-Points)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/breadboard_big.jpeg" alt="Full-Size Solderless Breadboard (830 Tie-Points)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">PCB &amp; Prototyping</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Full-Size Solderless Breadboard (830 Tie-Points)</h4>
+              <p class="sr-card-desc">Expansive 830-tie-point breadboard with two full-length power distribution buses.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="copper-clad-board" tabindex="0" role="button" aria-label="View details for Single-Sided Copper Clad Board (FR2/FR4) for PCB Etching">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/copper PCB.jpeg" alt="Single-Sided Copper Clad Board (FR2/FR4) for PCB Etching" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">PCB &amp; Prototyping</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Single-Sided Copper Clad Board (FR2/FR4) for PCB Etching</h4>
+              <p class="sr-card-desc">High-purity copper-clad laminate for DIY circuit toner-transfer and chemical etching.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="zero-pcb-perfboard" tabindex="0" role="button" aria-label="View details for General-Purpose Zero PCB (Dotted Matrix Perfboard)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/PCB .jpeg" alt="General-Purpose Zero PCB (Dotted Matrix Perfboard)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">PCB &amp; Prototyping</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">General-Purpose Zero PCB (Dotted Matrix Perfboard)</h4>
+              <p class="sr-card-desc">Pre-drilled dotted copper eyelet perfboard for permanent circuit soldering.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="enamelled-copper-wire" tabindex="0" role="button" aria-label="View details for Enamelled Magnet Copper Winding Wire Spool">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/copper wire.jpeg" alt="Enamelled Magnet Copper Winding Wire Spool" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">PCB &amp; Prototyping</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Enamelled Magnet Copper Winding Wire Spool</h4>
+              <p class="sr-card-desc">High-conductivity polyurethane-insulated magnet wire for coils and inductors.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="digital-logic-ics" tabindex="0" role="button" aria-label="View details for Digital Logic Gate ICs Collection (74HC Series)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/IC.jpeg" alt="Digital Logic Gate ICs Collection (74HC Series)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Digital Logic Gate ICs Collection (74HC Series)</h4>
+              <p class="sr-card-desc">33 ICs in stock (NAND, AND, OR, XOR, NOT, Adders, Multiplexers, Shift Registers, Regulators). Numbered 1 to 33.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="power-regulator-ics" tabindex="0" role="button" aria-label="View details for Curated Linear ICs &amp; Voltage Regulators (7805 / 7812)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/IC'S.jpeg" alt="Curated Linear ICs &amp; Voltage Regulators (7805 / 7812)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Curated Linear ICs &amp; Voltage Regulators (7805 / 7812)</h4>
+              <p class="sr-card-desc">TO-220 positive fixed voltage regulators and operational amplifiers.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="ne555-timer-ic" tabindex="0" role="button" aria-label="View details for NE555 Precision Monolithic Timer IC">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Timer.jpeg" alt="NE555 Precision Monolithic Timer IC" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">NE555 Precision Monolithic Timer IC</h4>
+              <p class="sr-card-desc">The legendary 8-pin precision timer for oscillators, pulse generators, and PWM.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="resistor-assortment-pack" tabindex="0" role="button" aria-label="View details for Assorted Carbon &amp; Metal Film Resistors Pack">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Registers.jpeg" alt="Assorted Carbon &amp; Metal Film Resistors Pack" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Assorted Carbon &amp; Metal Film Resistors Pack</h4>
+              <p class="sr-card-desc">Wide spectrum of color-coded 1/4W resistors from low Ohms to Megaohms.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="rotary-potentiometer" tabindex="0" role="button" aria-label="View details for Rotary Analog Potentiometer (Variable Resistor)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/potentiometer.jpeg" alt="Rotary Analog Potentiometer (Variable Resistor)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Rotary Analog Potentiometer (Variable Resistor)</h4>
+              <p class="sr-card-desc">Smooth rotary 3-terminal variable resistor for analog calibration and control.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="berg-strip-headers" tabindex="0" role="button" aria-label="View details for Male &amp; Female Berg Strip Header Pins (2.54mm Pitch)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/pIN.jpeg" alt="Male &amp; Female Berg Strip Header Pins (2.54mm Pitch)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Male &amp; Female Berg Strip Header Pins (2.54mm Pitch)</h4>
+              <p class="sr-card-desc">Snappable 40-pin header strips for PCB connections and jumper wire sockets.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="battery-18650-li-ion" tabindex="0" role="button" aria-label="View details for Rechargeable 18650 3.7V High-Capacity Li-Ion Cell">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Battery.jpeg" alt="Rechargeable 18650 3.7V High-Capacity Li-Ion Cell" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Rechargeable 18650 3.7V High-Capacity Li-Ion Cell</h4>
+              <p class="sr-card-desc">High-density cylindrical 3.7V rechargeable lithium-ion battery cell.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="charger-18650-dock" tabindex="0" role="button" aria-label="View details for 18650 Single-Slot Lithium-Ion Smart Cradle Charger">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/battery charger.jpeg" alt="18650 Single-Slot Lithium-Ion Smart Cradle Charger" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">18650 Single-Slot Lithium-Ion Smart Cradle Charger</h4>
+              <p class="sr-card-desc">Automatic CC/CV smart charging dock with multi-color LED charging indicator.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="charger-dc-adapter" tabindex="0" role="button" aria-label="View details for Regulated DC Power Adapter / Wall Charger Unit">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/charger.jpeg" alt="Regulated DC Power Adapter / Wall Charger Unit" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Regulated DC Power Adapter / Wall Charger Unit</h4>
+              <p class="sr-card-desc">Mains switch-mode DC power supply adapter for benchtop hardware prototyping.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="charger-usb-5v" tabindex="0" role="button" aria-label="View details for High-Speed 5V USB Power Supply Adapter">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/chager_1.jpeg" alt="High-Speed 5V USB Power Supply Adapter" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">High-Speed 5V USB Power Supply Adapter</h4>
+              <p class="sr-card-desc">Compact USB power adapter delivering clean 5V output for development boards.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="leds-assorted-pack" tabindex="0" role="button" aria-label="View details for Assorted 5mm Diffused LEDs Pack (Red, Green, Blue, Yellow)">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/LED.jpeg" alt="Assorted 5mm Diffused LEDs Pack (Red, Green, Blue, Yellow)" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Assorted 5mm Diffused LEDs Pack (Red, Green, Blue, Yellow)</h4>
+              <p class="sr-card-desc">High-brightness indicator LEDs in standard 5mm diffused epoxy packages.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="led-panel-cob" tabindex="0" role="button" aria-label="View details for High-Intensity Matrix / COB LED Light Panel">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/LED pannel.jpeg" alt="High-Intensity Matrix / COB LED Light Panel" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">High-Intensity Matrix / COB LED Light Panel</h4>
+              <p class="sr-card-desc">Multi-chip LED module providing intense uniform white illumination.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="led-aux-module" tabindex="0" role="button" aria-label="View details for Solid-State Auxiliary LED Light Module">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/light.jpeg" alt="Solid-State Auxiliary LED Light Module" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Solid-State Auxiliary LED Light Module</h4>
+              <p class="sr-card-desc">Compact low-power illumination module with pre-soldered pin connectors.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="buzzer-piezo" tabindex="0" role="button" aria-label="View details for 5V Active / Passive Piezoelectric Audio Buzzer">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Buzzer.jpeg" alt="5V Active / Passive Piezoelectric Audio Buzzer" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">5V Active / Passive Piezoelectric Audio Buzzer</h4>
+              <p class="sr-card-desc">Sharp audible alarm transducer for alerts, notifications, and timers.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="speaker-mini-dynamic" tabindex="0" role="button" aria-label="View details for Miniature 8-Ohm Dynamic Voice-Coil Audio Speaker">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/speaker.jpeg" alt="Miniature 8-Ohm Dynamic Voice-Coil Audio Speaker" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Electronics Components</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Miniature 8-Ohm Dynamic Voice-Coil Audio Speaker</h4>
+              <p class="sr-card-desc">Dynamic electromagnetic speaker for synthesized audio, melodies, and speech.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="notes-cmos-vlsi" tabindex="0" role="button" aria-label="View details for Handwritten CMOS &amp; VLSI Technology In-Depth Notes">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/CMOS_NOTES.jpeg" alt="Handwritten CMOS &amp; VLSI Technology In-Depth Notes" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Books &amp; Notes</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Handwritten CMOS &amp; VLSI Technology In-Depth Notes</h4>
+              <p class="sr-card-desc">Detailed handwritten personal notes on MOSFET physics and CMOS digital layout.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="notes-pn-junction" tabindex="0" role="button" aria-label="View details for Semiconductor Physics: P-N Junction In-Depth Notes">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/PN_UNCTION_NOTES.jpeg" alt="Semiconductor Physics: P-N Junction In-Depth Notes" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Books &amp; Notes</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Semiconductor Physics: P-N Junction In-Depth Notes</h4>
+              <p class="sr-card-desc">Rigorous study notes with energy band diagrams and depletion region equations.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="book-engineering-textbook" tabindex="0" role="button" aria-label="View details for Core Electronics &amp; Electrical Engineering Reference Book">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Engineering_book.jpeg" alt="Core Electronics &amp; Electrical Engineering Reference Book" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Books &amp; Notes</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Core Electronics &amp; Electrical Engineering Reference Book</h4>
+              <p class="sr-card-desc">Standard authoritative textbook covering circuit analysis and analog fundamentals.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="book-bhagavad-gita" tabindex="0" role="button" aria-label="View details for Bhagavad Gita As It Is — Mindset &amp; Resilience Guide">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/BHAGAVAD GITA.jpeg" alt="Bhagavad Gita As It Is — Mindset &amp; Resilience Guide" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Books &amp; Notes</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Bhagavad Gita As It Is — Mindset &amp; Resilience Guide</h4>
+              <p class="sr-card-desc">Timeless philosophical guide on duty (Karma Yoga), focus, and mental clarity.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="assignment-pages-pack" tabindex="0" role="button" aria-label="View details for University Standard Ruled Assignment &amp; Lab Sheets Pack">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/ASSIGNMENT_PAGES.jpeg" alt="University Standard Ruled Assignment &amp; Lab Sheets Pack" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Books &amp; Notes</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">University Standard Ruled Assignment &amp; Lab Sheets Pack</h4>
+              <p class="sr-card-desc">Clean ruled sheets meeting DU standards for practical files and lab records.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sr-card" data-id="cello-tape-heavy-duty" tabindex="0" role="button" aria-label="View details for Heavy-Duty Clear Prototyping Adhesive Tape Roll">
+            <div class="sr-card-thumb-wrap">
+              <img src="assets/resources/Cello_tape.jpeg" alt="Heavy-Duty Clear Prototyping Adhesive Tape Roll" class="sr-card-thumb" loading="lazy" onerror="this.onerror=null; this.src='assets/resources/portrait.png';">
+              <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+              <span class="sr-card-cat-badge">Project Materials</span>
+            </div>
+            <div class="sr-card-body">
+              <h4 class="sr-card-title">Heavy-Duty Clear Prototyping Adhesive Tape Roll</h4>
+              <p class="sr-card-desc">High-tack clear adhesive tape for wire bundling, chassis mounting, and mockups.</p>
+              <div class="sr-card-footer">
+                <span style="font-size:12px; font-weight:600; color:var(--amber-dark);"><i class="fas fa-check-circle"></i> In Stock</span>
+                <button type="button" class="sr-card-action-btn">
+                  <span>Details</span> <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Empty State -->
+      <div id="srEmptyState" style="display:none; text-align:center; padding:60px 20px; background:#fff; border-radius:20px; border:1px dashed var(--border-orange); max-width:600px; margin:40px auto 0;">
+        <i class="fas fa-box-open" style="font-size:48px; color:var(--amber-dark); margin-bottom:16px;"></i>
+        <h3 style="font-size:22px; color:var(--brown-dark); margin-bottom:8px;">No matching resources found</h3>
+        <p style="color:var(--text-mid); font-size:15px; margin-bottom:20px;">Try searching for a different term or switch the category filter back to "All".</p>
+        <button type="button" class="sr-btn sr-btn-secondary" id="srResetFilterBtn" onclick="document.getElementById('srSearchInput').value=''; document.querySelector('.sr-filter-btn[data-category=All]').click();">Reset Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ DETAILS MODAL ═══════════ -->
+  <div class="sr-modal-overlay" id="srDetailModal" role="dialog" aria-modal="true" aria-labelledby="srModalTitle">
+    <div class="sr-modal">
+      <button type="button" class="sr-modal-close" id="srModalClose" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="sr-modal-media">
+        <img id="srModalImg" src="" alt="Resource photograph">
+      </div>
+      <div class="sr-modal-thumbs" id="srModalThumbs" style="display:none;"></div>
+
+      <div class="sr-modal-content">
+        <div class="sr-modal-meta">
+          <span class="sr-card-badge-free"><i class="fas fa-gift"></i> Available Free</span>
+          <span class="sr-card-cat-badge" id="srModalCat">Category</span>
+        </div>
+
+        <h3 class="sr-modal-title" id="srModalTitle">Item Title</h3>
+        <p class="sr-modal-desc" id="srModalDesc">Full description of this resource.</p>
+
+        <div id="srModalExtraSection" class="sr-modal-extra-section" style="display:none;"></div>
+        <div class="sr-modal-info-box">
+          <div class="sr-modal-info-row">
+            <strong><i class="fas fa-tools"></i> Best Suited For:</strong>
+            <span id="srModalSuitable">Project applications</span>
+          </div>
+          <div class="sr-modal-info-row">
+            <strong><i class="fas fa-microchip"></i> Key Specs / Notes:</strong>
+            <span id="srModalSpecs">Specifications</span>
+          </div>
+          <div class="sr-modal-info-row">
+            <strong><i class="fas fa-shield-alt"></i> Allocation Rule:</strong>
+            <span>Maximum 3 items per student &bull; First come, first served &bull; Valid College ID required</span>
+          </div>
+        </div>
+
+        <div class="sr-modal-actions">
+          <button type="button" class="sr-btn sr-btn-primary" id="srModalRequestBtn">
+            <i class="fas fa-plus-circle"></i> Request This Item
+          </button>
+          <a href="#srCollectionSection" class="sr-btn sr-btn-secondary" onclick="document.getElementById('srDetailModal').classList.remove('active'); document.body.style.overflow='';">
+            <i class="fas fa-map-marker-alt"></i> View Collection Points
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ 8. REQUEST A RESOURCE FORM ═══════════ -->
+  <section class="sr-request-section" id="srRequestSection">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Student Application</span>
+        <h2>Request a Resource</h2>
+        <p>Tell us what you're building and pick your preferred collection slot</p>
+        <div class="line"></div>
+      </div>
+
+      <div class="sr-form-card">
+        <div class="sr-form-notice">
+          <i class="fas fa-exclamation-circle" style="color:var(--amber-dark); margin-right:6px;"></i>
+          <strong>Important:</strong> Resources are subject to availability and genuine student requirements. Maximum 3 items per student. First come, first served.
+        </div>
+
+        <form id="srRequestForm">
+          <div class="sr-form-grid">
+            <!-- Full Name -->
+            <div class="sr-form-group">
+              <label for="srFormName">Full Name <span>*</span></label>
+              <input type="text" id="srFormName" placeholder="Your full name" required>
+            </div>
+
+            <!-- College/University -->
+            <div class="sr-form-group">
+              <label for="srFormCollege">College / University <span>*</span></label>
+              <input type="text" id="srFormCollege" placeholder="e.g. Faculty of Technology, University of Delhi" required>
+            </div>
+
+            <!-- Course/Branch -->
+            <div class="sr-form-group">
+              <label for="srFormCourse">Course &amp; Branch <span>*</span></label>
+              <input type="text" id="srFormCourse" placeholder="e.g. B.Tech ECE, 2nd Year" required>
+            </div>
+
+            <!-- Phone/WhatsApp / Email -->
+            <div class="sr-form-group">
+              <label for="srFormContact">Phone / WhatsApp / Email <span>*</span></label>
+              <input type="text" id="srFormContact" placeholder="Phone or email for slot confirmation" required>
+            </div>
+
+            <!-- Resource Required -->
+            <div class="sr-form-group full">
+              <label for="srFormResource">Resource(s) Required (Max 3 Items) <span>*</span></label>
+              <input type="text" id="srFormResource" placeholder="e.g. Arduino UNO, Breadboard, Ultrasonic Sensor (Clicking 'Request This Item' in gallery auto-fills here)" required>
+              <small><i class="fas fa-info-circle"></i> Tip: You can request up to 3 components or tools at a time.</small>
+            </div>
+
+            <!-- Project/Purpose -->
+            <div class="sr-form-group full">
+              <label for="srFormPurpose">Project / Purpose <span>*</span></label>
+              <textarea id="srFormPurpose" placeholder="Briefly describe what you are building or learning (e.g. Autonomous obstacle-avoiding bot for semester minor project, studying CMOS gate delays for lab exams...)" required></textarea>
+            </div>
+
+            <!-- Collection Point -->
+            <div class="sr-form-group">
+              <label for="srFormPoint">Collection Point <span>*</span></label>
+              <select id="srFormPoint" required>
+                <option value="" disabled selected>-- Select your designated collection point --</option>
+                <option value="Pandit Ji Canteen, DU North Campus (Male Students: Sat 10am-8pm, Sun 10am-3pm)">
+                  Pandit Ji Canteen (Male Students &bull; Sat 10am-8pm, Sun 10am-3pm)
+                </option>
+                <option value="PrintRocket Office, Room 514, Udhmodya Foundation (Female Students: Mon-Fri 1pm-2pm)">
+                  PrintRocket Office, Room 514, Udhmodya Foundation (Female Students &bull; Mon-Fri 1pm-2pm)
+                </option>
+              </select>
+            </div>
+
+            <!-- Preferred Date -->
+            <div class="sr-form-group">
+              <label for="srFormDate">Preferred Collection Date <span>*</span></label>
+              <input type="date" id="srFormDate" required>
+            </div>
+          </div>
+
+          <div class="sr-form-submit-wrap">
+            <button type="submit" class="sr-form-submit-btn">
+              <i class="fas fa-paper-plane"></i> Request a Resource
+            </button>
+            <div style="font-size:13px; color:var(--text-light); margin-top:14px;">
+              <i class="fas fa-check-circle" style="color:var(--amber-dark);"></i> No cost. No hidden fees. Tea &amp; samosa on me when you collect!
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SUCCESS CONFIRMATION MODAL ═══════════ -->
+  <div class="sr-modal-overlay" id="srSuccessModal" role="dialog" aria-modal="true">
+    <div class="sr-success-modal">
+      <div class="sr-success-icon"><i class="fas fa-check"></i></div>
+      <h3>Resource Request Received!</h3>
+      <p>Thank you for reaching out. Your request has been recorded. Here are your collection details:</p>
+      
+      <div class="sr-success-details" id="srSuccessDetails">
+        <!-- Filled by student-resources.js -->
+      </div>
+
+      <button type="button" class="sr-btn sr-btn-primary" id="srSuccessClose" style="width:100%; justify-content:center;">
+        Got It, Thank You!
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══════════ 9. WHY I DO THIS ═══════════ -->
+  <section class="sr-why" id="srWhySection">
+    <div class="container">
+      <div class="sr-why-wrap">
+        <div class="sr-why-photo-wrap">
+          <img src="assets/resources/portrait.png" alt="Gavendra Singh" onerror="this.onerror=null; this.src='photo.png';">
+          <div class="sr-why-caption">
+            <strong>Gavendra Singh</strong>
+            <span>Founder &amp; CEO, PrintRocket &bull; ECE @ Faculty of Technology, DU</span>
+          </div>
+        </div>
+
+        <div class="sr-why-text">
+          <span class="eyebrow">The Mission &amp; Heart</span>
+          <h2>Why I Do This</h2>
+          <p>
+            As an Electronics and Communication Engineering student at the Faculty of Technology, University of Delhi, and the founder of PrintRocket, I have spent countless late nights building circuits, soldering prototypes, programming microcontrollers, and debugging hardware.
+          </p>
+          <p>
+            Time and again, I have seen brilliant, passionate student engineers hesitate or give up on an idea simply because buying an Arduino board, a handful of sensors, a motor driver, or a multimeter strained their pocket money. In hardware engineering, components add up quickly—and for a student with tight finances, that barrier can feel impossible.
+          </p>
+          
+          <div class="sr-why-highlight">
+            "If a student has the willingness to learn, lack of money should never be the reason they stop building."
+          </div>
+
+          <p>
+            Rooted in the Sikh principle of <strong>Vand Chhako</strong> (sharing with the community), I believe components sitting in drawers or on shelves produce zero value. But when put into the eager hands of a student builder, they turn into robots, prototypes, research publications, and career breakthroughs. That is why these materials are free.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ 10. FINAL CTA ═══════════ -->
+  <section class="sr-final-cta" id="srFinalCtaSection">
+    <div class="container">
+      <div class="sr-final-cta-box">
+        <div class="sr-cta-tagline">Learn &bull; Build &bull; Experiment &bull; Share</div>
+        <h2>Have an Idea? Let's Get Building.</h2>
+        <p>
+          Pick the resources you need, drop by DU North Campus at Pandit Ji Canteen or the PrintRocket Office, have a cup of warm tea and a samosa on me, and let's turn your concept into working hardware.
+        </p>
+        <div class="sr-final-cta-actions">
+          <a href="#srRequestSection" class="sr-btn sr-btn-primary">
+            <i class="fas fa-paper-plane"></i> Request Resources Now
+          </a>
+          <a href="#srGallerySection" class="sr-btn sr-btn-secondary">
+            <i class="fas fa-boxes"></i> Browse Full Gallery
+          </a>
+          <a href="https://linkedin.com/in/gavendra-singh-7b1b2b312" target="_blank" rel="noopener noreferrer" class="sr-btn sr-btn-secondary">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-box">
+          <div class="footer-logo">
+            <img src="logo.png" alt="PrintRocket Logo">
+            <span>Gavendra Singh</span>
+          </div>
+          <p>Founder &amp; CEO, PrintRocket. B.Tech ECE, Faculty of Technology, University of Delhi. Innovating with purpose, humility, and community sharing.</p>
+        </div>
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="#sr-hero">Student Resources</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#consulting">Consulting</a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Legal</h3>
+          <div class="footer-links">
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="refund-and-cancellation-policy.html">Refund Policy</a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <p>D.S. Kothari Hostel, University of Delhi</p>
+          <p>Delhi, India — 110007</p>
+          <p>gavendrasingh@ece.du.ac.in</p>
+          <p style="margin-top:10px;font-size:12px;opacity:.45;">&copy; 2026 PrintRocket. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Gavendra Singh &bull; Student Resources &bull; Built with &hearts; in Delhi
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      if (typeof emailjs !== 'undefined') {
+        emailjs.init("%VITE_EMAILJS_PUBLIC_KEY%");
+      }
+    })();
+  </script>
+  <script type="module" src="resources-data.js"></script>
+  <script type="module" src="student-resources.js"></script>
+  <script>
+    /* Navbar scroll shadow */
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    /* Mobile hamburger menu */
+    const hamburger = document.getElementById('hamburger');
+    if (hamburger) {
+      hamburger.addEventListener('click', () => {
+        const links = document.querySelector('.nav-links');
+        if (links) links.classList.toggle('active');
+      });
+    }
+
+    /* Auto-close mobile nav on anchor click */
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        const links = document.querySelector('.nav-links');
+        if (links && links.classList.contains('active')) {
+          links.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
